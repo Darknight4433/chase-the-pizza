@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="_AnUH,ki.gg/{!QAOc3Q">Player</variable><variable type="KIND_SpriteKind" id="s@2%!JmoP-tOh?YEGo6_">Projectile</variable><variable type="KIND_SpriteKind" id="1F5H6)!-nLW-IxehIG0y">Food</variable><variable type="KIND_SpriteKind" id="N*lAliBYUKSv7yI7XB%=">Enemy</variable><variable id="v5w~SkADmytibkznRwvj">mySprite</variable><variable id="s,?Ffc[QsDij^*?UcGni">pizza</variable></variables><block type="pxt-on-start" id="6^u@MXh$`X]/)/E[./9c" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="CH7fv5V`/_15dR3m7@[2"><value name="color"><shadow type="colorindexpicker" id=",)sHH^7@N`2F?Z5|SUj6"><field name="index">9</field></shadow></value><next><block type="variables_set" id="oqc=ieY-m*=}39xx8=7Z"><field name="VAR" id="v5w~SkADmytibkznRwvj">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="{4[;|p4pCP;Y-fhfNLDW"><value name="img"><shadow type="screen_image_picker" id="ei-t2tL=V9.^S4HpyIK{"><field name="img">img`
+. . . . f f f f f f f f . . . . 
+. . f f 5 5 5 5 5 5 5 5 f f . . 
+. f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+. f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f 
+f 5 5 5 f f 5 5 5 5 f f 5 5 5 f 
+f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f 
+f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f 
+f 5 3 5 5 f f f f f f 5 5 3 5 f 
+f 5 5 5 f f c c c c f f 5 5 5 f 
+f 5 5 5 5 f b b b b f 5 5 5 5 f 
+f 5 5 5 5 f b b b b f 5 5 5 5 f 
+. f 5 5 5 5 f f f f 5 5 5 5 f . 
+. f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
+. . f f 5 5 5 5 5 5 5 5 f f . . 
+. . . f f f f f f f f f f . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"ei-t2tL=V9.^S4HpyIK{"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="I*Z@K=XLQd}5}YcG7$52"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="~Y,IU.i@i{zK.lP?#:Wf"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="%0^wGRCd^_^X;O8jMFmL"><field name="VAR" id="v5w~SkADmytibkznRwvj">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="^@)jBGLOnK8$qbmQ)w{I"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="APUJP77bm!fI.9NV^PCw"><field name="speed">100</field></shadow></value><next><block type="variables_set" id=",=5~/nckhMQxLkg!JcU1"><field name="VAR" id="s,?Ffc[QsDij^*?UcGni">pizza</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="D.Mm*rQ2%Z*VTQ}i%@wF"><value name="img"><shadow type="screen_image_picker" id="PCLN.z7e-e62M@OTOf#u"><field name="img">img`
+. . . . . . b b b b . . . . . . 
+. . . . . . b 4 4 4 b . . . . . 
+. . . . . . b b 4 4 4 b . . . . 
+. . . . . b 4 b b b 4 4 b . . . 
+. . . . b d 5 5 5 4 b 4 4 b . . 
+. . . . b 3 2 3 5 5 4 e 4 4 b . 
+. . . b d 2 2 2 5 7 5 4 e 4 4 e 
+. . . b 5 3 2 3 5 5 5 5 e e e e 
+. . b d 7 5 5 5 3 2 3 5 5 e e e 
+. . b 5 5 5 5 5 2 2 2 5 5 d e e 
+. b 3 2 3 5 7 5 3 2 3 5 d d e 4 
+. b 2 2 2 5 5 5 5 5 5 d d e 4 . 
+b d 3 2 d 5 5 5 d d d 4 4 . . . 
+b 5 5 5 5 d d 4 4 4 4 . . . . . 
+4 d d d 4 4 4 . . . . . . . . . 
+4 4 4 4 . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"PCLN.z7e-e62M@OTOf#u"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="7R^0?(J,3.OsGrC76Q*M"><field name="MEMBER">Food</field></shadow></value></block></value></block></next></block></next></block></next></block></statement></block><block type="spritesoverlap" id="5i`m,#Zdt#1`n;v_nw3l" x="10" y="330"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="N~$t!:]YX0DkgWHtxk%v"><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="mQu|4bEMWNV(3l+DM=2O"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom" id="vKL=.Iw3Rw[#CVJJq3!v"><mutation typename="Sprite"></mutation><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind" id="mL4/Yo;ow3b7O+dY2H@j"><field name="MEMBER">Food</field></shadow></value><statement name="HANDLER"><block type="hudChangeScoreBy" id="IhOhzH|:CXiBBcX?cm!B"><value name="value"><shadow type="math_number" id="GfmB2Y9eNh~)b[9vm`QO"><field name="NUM">1</field></shadow></value><next><block type="spritesetpos" id="x3g8+OCNh{[,c?;h~cY{"><value name="sprite"><block type="variables_get" id="Y}y+OTJ/N)y_HqeDhX1h"><field name="VAR" id="s,?Ffc[QsDij^*?UcGni">pizza</field></block></value><value name="x"><shadow type="positionPicker"><value name="index"><shadow type="math_number" colour="#FFFFFF"><field name="NUM">0</field><mutation customfield="{&quot;decompileLiterals&quot;:&quot;true&quot;}"></mutation></shadow></value></shadow><block type="device_random" id="oI6u7s?iEmR[P.|/o8/H"><value name="min"><shadow type="math_number" id="mf;P?s;@84e;bV.-Chug"><field name="NUM">0</field></shadow></value><value name="limit"><block type="scenescreenwidth" id="2gMu4O4UmOttq}Zf+viR"></block></value></block></value><value name="y"><shadow type="positionPicker"><value name="index"><shadow type="math_number" colour="#FFFFFF"><field name="NUM">0</field><mutation customfield="{&quot;decompileLiterals&quot;:&quot;true&quot;}"></mutation></shadow></value></shadow><block type="device_random" id="_:{TEp:2UKnO*]Fc^0vO"><value name="min"><shadow type="math_number" id="_r[`IEQ^7B)YLsfW2Q8N"><field name="NUM">0</field></shadow></value><value name="limit"><block type="scenescreenheight" id="$a/n!l;5F8$[vtSK3X.9"></block></value></block></value><next><block type="gamecountdown" id="V$rV9Ggbn:YxpBVsGN1R"><value name="duration"><shadow type="math_number" id="V+pMkC_C%k(*TkG{cD.o"><field name="NUM">4</field></shadow></value></block></next></block></next></block></statement></block></xml>
